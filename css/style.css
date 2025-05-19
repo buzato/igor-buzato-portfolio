@@ -246,73 +246,12 @@ nav a.active {
 }
 
 /* Seção de Habilidades (Página Inicial) */
-.destaque {
+.highlights {
     padding: 80px 0;
     background-color: #fff;
 }
 
-.skills {
-    margin-top: 30px;
-}
-
-.skill {
-    margin-bottom: 25px;
-    opacity: 0;
-    transform: translateX(-20px);
-    animation: fadeInLeft 0.8s forwards;
-    animation-delay: calc(var(--skill-index, 0) * 0.2s);
-}
-
-.skill:nth-child(1) {
-    --skill-index: 1;
-}
-
-.skill:nth-child(2) {
-    --skill-index: 2;
-}
-
-.skill:nth-child(3) {
-    --skill-index: 3;
-}
-
-.skill-bar {
-    height: 10px;
-    background-color: #eaeaea;
-    border-radius: 5px;
-    overflow: hidden;
-    margin-top: 8px;
-}
-
-.skill-level {
-    height: 100%;
-    background-color: #0066cc;
-    border-radius: 5px;
-    width: 0;
-    animation: skillProgress 1.5s forwards ease-out;
-    animation-delay: calc(var(--skill-index, 0) * 0.3s + 0.5s);
-}
-
-/* Animação para as barras de habilidades */
-@keyframes skillProgress {
-    to {
-        width: var(--skill-width, 0);
-    }
-}
-
-/* Animação para os itens de habilidades */
-@keyframes fadeInLeft {
-    from {
-        opacity: 0;
-        transform: translateX(-20px);
-    }
-
-    to {
-        opacity: 1;
-        transform: translateX(0);
-    }
-}
-
-/* Habilidades como cards pequenos */
+/* Cards de habilidades */
 .skills-cards {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
@@ -354,7 +293,7 @@ nav a.active {
     display: block;
 }
 
-/* Layout de Página de Conteúdo */
+/* Layout de Página */
 .page-content {
     padding: 60px 0;
 }
